@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/* header general */
+header{
+    border-bottom: solid black 1px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #874421;
+    background-image: url(./imagenes/barricas3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logoImagen{
+    width: 120px;
+    border: 2px solid white;
+}
+.menu{
+    font-family: 'Allura', cursive;
+    font-size: 1.5rem;
+}
+li{
+    display: inline-block;
+    margin: 0.5rem;    
+}
+.menuText{
+    color:rgb(153, 150, 150);   
+    font-weight: bolder; 
+    border-right: 2px black solid;
+    padding-right: 1rem;
+}
+.noBorder{
+    border: none;
+}
+/* main del index */
+main{
+    width: 100%;
+    height: fit-content;
+    background-color: #cd966c;
+    font-family: 'Allura', cursive;    
+}
+.titulo{
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 7rem;
+    text-decoration: underline;
+}
+.imgIndex{
+    max-width: 70%;
+    min-width: 300px;
+    border-radius: 6px;
+}
+.frase{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.tituloServicios{
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+}
+.textoServicios{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
+}
+span{
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+.serviciosImg{
+    width: 90%;
+    border-radius: 6px;
+}
+/* grid aplicado en esta parte */
+.serviciosIndex{
+    width: 100%;        
+    display: grid;  
+    grid-template-columns: repeat(3, minmax(250px, auto));
+    grid-auto-rows: minmax(200px, auto);
+    justify-content: center;
+}
+.serviciosIndex__card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+/* footer general */
+footer{    
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+    font-size: 1.5rem;
+    font-family: 'Tangerine', cursive;
+}
+.redes{
+    width: 5rem;
+    border-radius: 15px;
+}
+footer div{
+    padding: 5px;
+}
+/* main pagina servicios */
+.serviciosPagina{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.serviciosPagina__card{
+    width: 90%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.serviciosImagenes{
+    width: 40%;
+    border-radius: 6px;
+}
+.invertidoServicios{
+    align-self:flex-end;
+    flex-direction: row-reverse;
+}
+/* main quienes-somos */
+/* grid utilizado en este main */
+.layoutNosotros{    
+    gap: 5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+        'titulo titulo'
+        'imagen texto1'
+        'texto2 texto2'
+        'mision vision'
+    ;
+}
+.nosotrosBox1{
+    grid-area: titulo;
+}
+.nosotrosBox2{
+    grid-area: imagen;
+}
+.nosotrosBox3{
+    grid-area: texto1;
+}
+.nosotrosBox4{
+    grid-area: texto2;
+}
+.nosotrosBox5{
+    grid-area: mision;
+}
+.nosotrosBox6{
+    grid-area: vision;
+}
+/* main blog */
+.titulosBlog{
+    font-size: 2rem;
+    text-align: left;
+    text-decoration: underline;
+}
+.listaCocktail{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+/* main contacto */
+.tituloContacto{
+    font-size: 3rem;
+    padding: 10px;
+}
+.textoContacto{
+    font-size: 1.5rem;
+    padding: 15px;    
+}
+.textarea{
+    max-width: 70%;
+    min-width: 70%;
+    max-height: 300px;
+    min-height: 300px;
+}
+.mensajeContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+@media screen and (max-width:768px) {
+    html{
+        font-size: 14px;
+    }
+    .serviciosIndex{
+        grid-template-columns: repeat(1, minmax(200px, 500px));
+    }
+    .layoutNosotros{          
+        grid-template-areas: 
+            'titulo'
+            'imagen' 
+            'texto1'
+            'texto2'
+            'mision' 
+            'vision'
+        ;
+    }    
+}
+@media screen and (max-width:320px) {
+    html{
+        font-size: 12px;
+    }
+    
+}
