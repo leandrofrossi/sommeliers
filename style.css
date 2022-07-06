@@ -129,14 +129,15 @@ footer div{
 }
 .serviciosPagina__card{
     width: 90%;
-    margin: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 5px;    
 }
 .serviciosImagenes{
-    width: 40%;
+    width: 40%;    
     border-radius: 6px;
 }
 .invertidoServicios{
@@ -222,11 +223,25 @@ footer div{
             'mision' 
             'vision'
         ;
-    }    
+    }
+    .serviciosPagina__card{
+        flex-direction: column;
+    } 
+    .invertidoServicios{
+        align-self: center;
+    }
+    .serviciosImagenes{
+        width: 400px; 
+    }
+    .titulosBlog{
+        text-align: center;
+    }
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:450px) {
     html{
         font-size: 12px;
     }
-    
+    .serviciosImagenes{
+        width: 250px;
+    } 
 }
