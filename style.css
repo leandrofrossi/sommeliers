@@ -58,10 +58,25 @@ main{
     min-width: 300px;
     border-radius: 6px;
 }
-.frase{
-    font-size: 1.7rem;
+/* animacion frase */
+.frase {
+    width: 100%;
+    animation: typing 15s steps(100), blink 10s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-family: 'Allura', cursive;
+    font-size: 1.6rem;
     text-align: center;
-}
+  }
+    @keyframes typing {
+        from { width: 0 }        
+  } 
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 .presentacion{
     display: flex;
     flex-direction: column;
@@ -87,7 +102,6 @@ span{
     width: 90%;
     border-radius: 6px;
 }
-/* grid aplicado en esta parte */
 .serviciosIndex{
     width: 100%;        
     display: grid;  
@@ -145,7 +159,6 @@ footer div{
     flex-direction: row-reverse;
 }
 /* main quienes-somos */
-/* grid utilizado en este main */
 .layoutNosotros{    
     gap: 5px;
     display: grid;
