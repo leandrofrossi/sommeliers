@@ -48,27 +48,67 @@
         </nav>
         <!-- finaliza el menu nav --> 
     </header>
-    <main>
-        <h2 class="tituloContacto">Contactanos</h2>
-        <p class="textoContacto">Completa el siguiente formulario y te contestaremos lo antes posible</p>
-        <form class="textoContacto">
-            <div>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" placeholder="Nombre Completo">
+    <main class="mainContacto">
+        <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="email@dominio.com">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/copa-cosecha.png" class="d-block w-100 ratio ratio-16x9" alt="imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/vino-fuego.png" class="d-block w-100 ratio ratio-16x9" alt="imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/guarda.png" class="d-block w-100 ratio ratio-16x9" alt="imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/botellas.png" class="d-block w-100 ratio ratio-16x9" alt="imagen 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/vino-atardecer.png" class="d-block w-100 ratio ratio-16x9" alt="imagen 5">
+                </div>
             </div>
-            <div>
-                <label for="mensaje" class="mensajeContacto">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje/consulta..." class="textarea"></textarea>
-            </div>
-            <input type="submit">
-            <input type="reset">
-        </form>
-        <p class="textoContacto">O escribinos a vinos@sommeliers.com</p>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <section class="inputsContacto">
+            <h2 class="tituloContacto">Contactanos</h2>
+            <p class="textoContacto">Completa el siguiente formulario y te contestaremos lo antes posible</p>
+            <form class="textoContacto">           
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Nombre Completo</span>
+                    <input type="text" class="form-control" placeholder="Carlos Rodriguez" aria-label="Username" aria-describedby="basic-addon1">
+                </div>         
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                    <input type="text" class="form-control" placeholder="carlos.rodriguez" aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="gmail.com" aria-label="Server">
+                </div>          
+                <div class="input-group mensaje">
+                    <span class="input-group-text">Mensaje</span>
+                    <textarea class="form-control textarea" placeholder="Escribe tu mensaje/consulta..." aria-label="With textarea"></textarea>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn mb-3">Submit</button>
+                    <button type="submit" class="btn mb-3">Reset</button>
+                </div>           
+            </form>
+            <p class="textoContacto">O escribinos a vinos@sommeliers.com</p>
         <!--email ficticio-->
+        </section>
     </main>
     <footer>
         <div>

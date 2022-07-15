@@ -75,7 +75,7 @@ main{
     padding: 20px;
 }
 .tituloServicios{
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding: 10px;
     font-weight: bolder;
@@ -157,6 +157,9 @@ footer{
     font-size: 3rem;
     color: rgb(131, 129, 129);    
 }
+h3 {
+    font-weight: bolder;
+}
 /* main pagina servicios */
 .serviciosPagina{
     padding: 15px;
@@ -226,11 +229,12 @@ footer{
 }
 /* main contacto */
 .tituloContacto{
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 10px;
+    font-weight: bolder;
 }
 .textoContacto{
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 15px;    
 }
 .textarea{
@@ -238,11 +242,41 @@ footer{
     min-width: 70%;
     max-height: 300px;
     min-height: 300px;
+} 
+.input-group{
+    max-width: 700px;
+    min-width: 280px;    
+}
+.mensaje{
+    max-height: 280px;
+    min-height: 280px;
+}
+.input-group-text{
+    font-size: 1.5rem;
+}
+.form-control{
+    font-size: 1.5rem;
 }
 .mensajeContacto{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+.col-auto{
+    margin: 10px;
+}
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel{   
+    width: 55%;
+    min-width: 300px;
+    margin: 10px;
+}
+.inputsContacto{
+    align-self: flex-start;
 }
 @media screen and (max-width:768px) {
     html{
