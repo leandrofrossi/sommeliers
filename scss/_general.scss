@@ -77,26 +77,3 @@ main{
     background-color: map-get($colores,"color-bgmain");
     font-family: $font-principal;    
 }
-/* media queries */
-@media screen and (max-width:768px) {
-    html{
-        font-size: 14px;
-    }
-    .serviciosPagina__card{
-        flex-direction: column;
-        .serviciosImagenes{
-        width: 400px;
-        }
-    }
-    .invertidoServicios{
-        align-self: center;
-    }
-}
-@media screen and (max-width:450px) {
-    html{
-        font-size: 12px;
-    }
-    .serviciosImagenes{
-        width: 250px;
-    } 
-}

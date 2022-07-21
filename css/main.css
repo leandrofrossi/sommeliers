@@ -67,23 +67,6 @@ main {
   background-color: #cd966c;
   font-family: "Allura", cursive; }
 
-/* media queries */
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 14px; }
-  .serviciosPagina__card {
-    flex-direction: column; }
-    .serviciosPagina__card .serviciosImagenes {
-      width: 400px; }
-  .invertidoServicios {
-    align-self: center; } }
-
-@media screen and (max-width: 450px) {
-  html {
-    font-size: 12px; }
-  .serviciosImagenes {
-    width: 250px; } }
-
 /* main pagina servicios */
 .serviciosPagina {
   padding: 15px;
@@ -116,3 +99,20 @@ main {
   text-align: center;
   padding: 10px;
   font-weight: bolder; }
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; }
+  .serviciosPagina__card {
+    flex-direction: column; }
+    .serviciosPagina__card .serviciosImagenes {
+      width: 400px; }
+  .invertidoServicios {
+    align-self: center; } }
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 12px; }
+  .serviciosPagina__card .serviciosImagenes {
+    width: 250px; } }
