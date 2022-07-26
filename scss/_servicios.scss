@@ -31,8 +31,11 @@
     flex-direction: row-reverse;
 }
 .tituloServicios{
-    font-size: 4rem;
     text-align: center;
     padding: 10px;
-    font-weight: bolder;
+    font:{
+        size: 4rem;
+        weight: bolder;
+        family: $font-principal;
+    }
 }

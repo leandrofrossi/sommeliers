@@ -45,7 +45,7 @@ main{
     width: 100%;
     height: fit-content;
     background-color: #cd966c;
-    font-family: 'Allura', cursive;    
+    font-family: 'Marck Script', cursive;    
 }
 .titulo{
     font-family: 'Tangerine', cursive;
@@ -232,6 +232,7 @@ h3 {
     font-size: 4rem;
     padding: 10px;
     font-weight: bolder;
+    font-family: 'Allura', cursive;
 }
 .textoContacto{
     font-size: 2rem;

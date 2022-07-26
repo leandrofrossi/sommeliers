@@ -1,0 +1,95 @@
+/* main del index */
+main{
+    width: 100%;
+    height: fit-content;
+    background-color: #cd966c;
+    font-family: 'Marck Script', cursive;    
+}
+.titulo{
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 7rem;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.imgIndex{
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: 1s ease all;
+}
+.imgIndex:hover{
+    transform: scale(1.1);
+}
+.frase {
+    font-size: 2.4rem;
+    text-align: center;
+    word-spacing: .5rem;
+  }
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.tituloServicios{
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+}
+.textoServicios{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
+}
+.serviciosIndex{         
+    display: grid;  
+    grid-template-columns: repeat(3, minmax(250px, auto));
+    grid-auto-rows: minmax(200px, auto);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/* animacion cards servicios index */
+.serviciosIndex__card {
+    position: relative;   
+    width: 90%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+  }  
+  .serviciosImg {
+    display: block;  
+    border-radius: 8px;
+    margin: 5px;
+  }  
+  .overlay {
+    position: absolute;   
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #242626;
+    border-radius: 6px;   
+  }  
+  .serviciosIndex__card:hover .overlay {
+    opacity: 1;
+  }  
+  .textoServiciosIndex {
+    color: rgb(131, 129, 129);    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+  }
+.btn{
+    background-color: rgb(131, 129, 129);
+    color: #242626;
+    font-size: 1.5rem;    
+}  
