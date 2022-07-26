@@ -290,12 +290,18 @@ main {
 @media screen and (max-width: 768px) {
   html {
     font-size: 14px; }
+  .serviciosIndex {
+    grid-template-columns: repeat(1, minmax(200px, 500px)); }
+  .layoutNosotros {
+    grid-template-areas: 'titulo' 'imagen'  'texto1' 'texto2' 'mision'  'vision'; }
   .serviciosPagina__card {
     flex-direction: column; }
     .serviciosPagina__card .serviciosImagenes {
       width: 400px; }
   .invertidoServicios {
-    align-self: center; } }
+    align-self: center; }
+  .titulosBlog {
+    text-align: center; } }
 
 @media screen and (max-width: 450px) {
   html {
