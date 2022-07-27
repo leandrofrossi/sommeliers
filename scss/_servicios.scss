@@ -17,7 +17,7 @@
         gap: 5px;
         .serviciosImagenes{
         width: 40%;    
-        border-radius: 6px;
+        border-radius: 8px;
         }
         .textoServicios{
             font-size: 1.5rem;
@@ -31,11 +31,5 @@
     flex-direction: row-reverse;
 }
 .tituloServicios{
-    text-align: center;
-    padding: 10px;
-    font:{
-        size: 4rem;
-        weight: bolder;
-        family: $font-principal;
-    }
+    @include titulos (center, 4rem, $font-principal)
 }

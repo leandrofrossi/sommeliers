@@ -8,3 +8,11 @@ $colores: (
 $font-principal: 'Allura', cursive;
 $font-secundaria: 'Tangerine', cursive;
 $font-terciaria: 'Marck Script', cursive;
+
+@mixin titulos ($alineacion,$textsize,$tipoletra){
+    text-align: $alineacion;
+    font-size: $textsize;
+    font-family: $tipoletra;
+    font-weight: 900;
+    padding: 10px;
+}
