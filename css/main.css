@@ -1,3 +1,8 @@
+.presentacion .imgIndex, .imgNosotros {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 1s ease all; }
+
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +75,11 @@ main {
   font-weight: 200; }
 
 /* main del index */
+.presentacion .imgIndex, .imgNosotros {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 1s ease all; }
+
 .presentacion {
   display: flex;
   flex-direction: column;
@@ -83,12 +93,8 @@ main {
     font-weight: 900;
     padding: 10px;
     text-decoration: underline; }
-  .presentacion .imgIndex {
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: 1s ease all; }
-    .presentacion .imgIndex:hover {
-      transform: scale(1.1); }
+  .presentacion .imgIndex:hover {
+    transform: scale(1.1); }
   .presentacion .frase {
     font-size: 2.4rem;
     text-align: center; }
@@ -176,6 +182,11 @@ main {
   padding: 10px; }
 
 /* main quienes-somos */
+.presentacion .imgIndex, .imgNosotros {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 1s ease all; }
+
 .layoutNosotros {
   gap: 5px;
   display: grid;
@@ -194,6 +205,10 @@ main {
     grid-area: mision; }
   .layoutNosotros .nosotrosBox6 {
     grid-area: vision; }
+
+.imgNosotros:hover {
+  filter: sepia(80%);
+  transform: scale(1.1); }
 
 /* main blog */
 .titulosBlog {

@@ -1,4 +1,5 @@
 /* main del index */
+@import './base/variables';
 .presentacion{
   display: flex;
   flex-direction: column;
@@ -10,9 +11,7 @@
     text-decoration: underline;        
     }  
   .imgIndex{
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: 1s ease all;
+    @extend %fotos;
     &:hover{
       transform: scale(1.1);
     }

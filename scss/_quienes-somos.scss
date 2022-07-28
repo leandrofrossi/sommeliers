@@ -1,4 +1,5 @@
 /* main quienes-somos */
+@import './base/variables';
 .layoutNosotros{    
     gap: 5px;
     display: grid;
@@ -14,7 +15,7 @@
     grid-area: titulo;
     }
     .nosotrosBox2{
-    grid-area: imagen;
+    grid-area: imagen;    
     }
     .nosotrosBox3{
     grid-area: texto1;
@@ -27,5 +28,12 @@
     }
     .nosotrosBox6{
     grid-area: vision;
+    }
+}
+.imgNosotros{
+    @extend %fotos;
+    &:hover{
+        filter: sepia(80%);
+        transform: scale(1.1);
     }
 }

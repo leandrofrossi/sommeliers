@@ -16,3 +16,9 @@ $font-terciaria: 'Marck Script', cursive;
     font-weight: 900;
     padding: 10px;
 }
+
+%fotos{
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: 1s ease all;    
+}
