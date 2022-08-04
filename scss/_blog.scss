@@ -1,6 +1,6 @@
 /* main blog */
 .titulosBlog{
-    @include titulos (left, 2rem, $font-terciaria)
+    @include titulos (left, 2rem, $font-terciaria);
     text-decoration: underline;
 }
 .listaCocktail{
