@@ -8,7 +8,6 @@
   padding: 0;
   text-decoration: none; }
 
-/* header general */
 header {
   border-bottom: solid black 1px;
   position: sticky;
@@ -44,7 +43,6 @@ header {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(153, 150, 150)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-/* footer general */
 footer {
   width: 100%;
   height: fit-content;
@@ -75,7 +73,6 @@ main {
   font-family: "Marck Script", cursive;
   font-weight: 200; }
 
-/* main del index */
 .presentacion .imgIndex, .imgNosotros {
   border-radius: 8px;
   margin-bottom: 20px;
@@ -149,7 +146,6 @@ main {
       color: #242626;
       font-size: 1.5rem; }
 
-/* main pagina servicios */
 .serviciosPagina {
   padding: 15px;
   display: flex;
@@ -182,7 +178,6 @@ main {
   font-weight: 900;
   padding: 10px; }
 
-/* main quienes-somos */
 .presentacion .imgIndex, .imgNosotros {
   border-radius: 8px;
   margin-bottom: 20px;
@@ -211,7 +206,6 @@ main {
   filter: sepia(80%);
   transform: scale(1.1); }
 
-/* main blog */
 .titulosBlog {
   text-align: left;
   font-size: 2rem;
@@ -225,7 +219,6 @@ main {
   flex-direction: column;
   text-align: left; }
 
-/* main contacto */
 .mainContacto {
   display: flex;
   flex-direction: column;
@@ -268,7 +261,6 @@ main {
           background-color: #838181;
           font-size: 1.5rem; }
 
-/* media queries */
 @media screen and (max-width: 768px) {
   html {
     font-size: 14px; }
